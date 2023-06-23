@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <a charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos do DOM</title>
+
+    <style>
+        body {
+            background: rgb(0, 255, 242);
+            margin: 0;
+            padding: 0;
+            color: rgb(231, 120, 15);
+        }
+        body h1{
+            background:rgba(255, 1, 1, 0.521);
+            padding: 0 auto;
+        }
+    </style>
+    
+</head>
+
+<body>
+
+    <h1 class="title">Inicinado estudos em DOM</h1>
+    <p id="descricao0">Aqui vai o resultado !</p>
+    <p id="descricao1">Aprendendo a usar o<strong> DOM</strong> em javaScript.</p>
+    <div class="clique"> Clique em mim !</div>
+    <Script>
+        let title = document.querySelector("h1.title");
+        let descri1 = document.querySelector("p#descricao0");
+        let descri2 = document.querySelector("p#descricao1");
+        let clique = document.querySelector("div.clique");
+       
+        title.style.color = "black"
+        descri1.style.color = "red"
+        descri2.style.color = "black"
+        clique.style.background = "red"
+        
+
+    </Script>
+      
+</body>
+</html>
